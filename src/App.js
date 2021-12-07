@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import ActiveOrders from './components/ActiveOrders/ActiveOrders';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter>      
       <Routes>
-        <Route></Route>
+        <Route path="/feed" element={<ActiveOrders />}></Route>
       </Routes>
     </BrowserRouter>
   );
